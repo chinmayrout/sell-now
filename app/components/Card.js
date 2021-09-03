@@ -19,7 +19,7 @@ function Card({ title, subTitle, image }) {
 const styles = StyleSheet.create({
   card: {
     borderRadius: 15,
-    backgroundColor: colors.white,
+    backgroundColor: colors.white, //so cards are not close to each other
     marginBottom: 20,
     overflow: "hidden",
   },
