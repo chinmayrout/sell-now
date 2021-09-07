@@ -1,19 +1,9 @@
 import React, { useState } from "react";
-import { Switch, TextInput } from "react-native";
-import AppTextInput from "./app/components/AppTextInput";
-
-import Icon from "./app/components/Icon";
-import ListItem from "./app/components/ListItem";
-
-import Screen from "./app/components/Screen";
 import AccountScreen from "./app/screens/AccountScreen";
-import ListingsScreen from "./app/screens/ListingsScreen";
+import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
+import LoginScreen from "./app/screens/LoginScreen";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
-  const [isNew, setIsNew] = useState(false);
-  return (
-    <Screen>
-      <Switch value={isNew} onValueChange={(newValue) => setIsNew(newValue)} />
-    </Screen>
-  );
+  return <MessagesScreen />;
 }
